@@ -420,9 +420,6 @@ class PHPUnit_Util_Configuration
             	if ($log->hasAttribute('absoluteRoot')) {
                     $result['absoluteRoot'] = (string) $log->getAttribute('absoluteRoot');
                 }
-                if ($log->hasAttribute('projectPrefix')) {
-                	$result['projectPrefix'] = (string) $log->getAttribute('projectPrefix');
-                }
 
             } elseif ($type == 'junit') {
                 if ($log->hasAttribute('logIncompleteSkipped')) {

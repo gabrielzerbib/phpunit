@@ -465,8 +465,7 @@ class PHPUnit_TextUI_TestRunner extends PHPUnit_Runner_BaseTestRunner
                     ' and <a href="http://phpunit.de/">PHPUnit %s</a>',
                     PHPUnit_Runner_Version::id()
                   ),
-                  isset($arguments['coverageAbsoluteRoot']) ? $arguments['coverageAbsoluteRoot'] : null,
-                  isset($arguments['coverageProjectPrefix']) ? $arguments['coverageProjectPrefix'] : null
+                  isset($arguments['coverageAbsoluteRoot']) ? $arguments['coverageAbsoluteRoot'] : null
                 );
 
                 $writer->process($codeCoverage, $arguments['coverageHtml']);

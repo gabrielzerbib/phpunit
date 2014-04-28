@@ -784,11 +784,6 @@ class PHPUnit_TextUI_TestRunner extends PHPUnit_Runner_BaseTestRunner
                     $arguments['coverageAbsoluteRoot'] = $loggingConfiguration['absoluteRoot'];
                 }
 
-                if (isset($loggingConfiguration['projectPrefix']) &&
-                    !isset($arguments['coverageProjectPrefix'])) {
-                    $arguments['coverageProjectPrefix'] = $loggingConfiguration['projectPrefix'];
-                }
-
                 $arguments['coverageHtml'] = $loggingConfiguration['coverage-html'];
             }
 
